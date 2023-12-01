@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="search-bar">
+        <input type="text" id="search-input" class="search-input" placeholder="Search by name, email or role">
+        <button id="search-icon" class="search-icon">🔍</button>
+    </div>
+    <button id="bulk-delete" class="bulk-delete">🗑️</button>
+    <table id="table">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="select-all"></th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+    <div class="pagination" id="pagination">
+
+    </div>
+    <button id="delete-selected" class="delete-selected">Delete Selected</button>
+    <script src="script.js" ></script>
 </body>
 </html>
